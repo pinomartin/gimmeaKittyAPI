@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(img/background.png);
+    background-attachment: fixed;
+    background-position: center;
+    
+    font-family: 'Gochi Hand', cursive!important;
+}
+
+.jumbotron{
+    margin-top: 5rem!important;
+    margin: 0 auto;
+    background-color: #f5e1a1e8;
+    border-radius: 3rem;
+    /* font-family: 'Baloo Bhaina 2', cursive; */
+    
+}
+
+.jumbotron img {
+    max-width: 100%;
+    
+}
+
+@media screen and (min-width: 768px){
+    
+    .jumbotron{
+        margin: 0 auto;
+        width: 35%!important;
+    }
+
+    .card{
+        min-width: 50%;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+}
+
+.card{
+    border-radius: 1rem;
+}
+
+.btn-kitty{
+    background-color: rgb(241,214,80);
+    color: #000000;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+    -webkit-box-shadow: 10px 2px 30px -6px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 2px 30px -6px rgba(0,0,0,0.62);
+    box-shadow: 10px 2px 30px -6px rgba(0,0,0,0.62);
+    
+}
+
+.btn-kitty:hover{
+    transform: scale(1.1);
+    background-color: rgba(241,214,80,0.5);
+    border: 1px solid #000000c4;
+}
