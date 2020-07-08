@@ -11,9 +11,11 @@ body{
     background-image: url(img/background.png);
     background-attachment: fixed;
     background-position: center;
-    min-height: 100vh;
     font-family: 'Gochi Hand', cursive!important;
+    overflow: hidden;
 }
+
+
 
 .jumbotron{
     margin-top: 5rem!important;
@@ -30,7 +32,7 @@ body{
 }
 
 @media screen and (min-width: 768px){
-    
+  
     .jumbotron{
         margin: 0 auto;
         width: 35%!important;
@@ -57,6 +59,20 @@ body{
     border: 1px solid #BDE1E5;
 }
 
+
+
+.modal-content{
+    background-color: #ecebeb;
+}
+
+.modal-header{
+    border-bottom: transparent;
+}
+
+.modal-footer{
+    border-top: transparent;
+}
+
 .btn-close{
     background-color: #B7D1C5;
     color: #000000;
@@ -66,3 +82,4 @@ body{
     background-color: #BDE1E5;
     border: 1px solid #BDE1E5;
 }
+
