@@ -1,6 +1,6 @@
 const boton = document.getElementById('btn-kitty');
 const saludo = document.getElementById('greeting');
-console.log(saludo)
+
 
 const peticion = `https://api.thecatapi.com/v1/images/search`;
 
@@ -9,6 +9,16 @@ const apiKEY = '78711a1f-0db0-4bdf-b231-1cc94bc3115f';
 
 const imagen = document.getElementById('imagen')
 const svg = 'svg/catspinner.svg';
+
+const saludosPack = ['Hi human !','Meowwww !','Katz rule the world! ', 'One cat just leads to another..',
+'All you need is love and a cat', 'Kittens are angels with whiskers', 'Time spent with cats is never wasted',
+'Cats choose us, we dont own them'];
+
+/**Random Number Generator */
+const roll = (min, max, floatFlag) => {
+    let r = Math.random() * (max - min) + min
+    return floatFlag ? r : Math.floor(r)
+}
 
 const getKitties = async () => {
     
@@ -22,7 +32,7 @@ const getKitties = async () => {
         const {url} = data[0];
         
         setTimeout(() => {
-            saludo.innerText = 'Hi Human !';
+            saludo.innerText = saludosPack[roll(0,saludosPack.length)];
 
         },1000);
         
@@ -35,6 +45,9 @@ const getKitties = async () => {
     }
     
 }
+
+
+
 
 boton.addEventListener('click',getKitties)
 
