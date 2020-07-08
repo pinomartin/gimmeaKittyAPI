@@ -56,11 +56,22 @@ body{
     -webkit-box-shadow: 10px 2px 30px -6px rgba(0,0,0,0.62);
     -moz-box-shadow: 10px 2px 30px -6px rgba(0,0,0,0.62);
     box-shadow: 10px 2px 30px -6px rgba(0,0,0,0.62);
-    
+    text-transform: capitalize;
+    padding: 1rem 2rem;
 }
 
 .btn-kitty:hover{
     transform: scale(1.1);
     background-color: rgba(241,214,80,0.5);
-    border: 1px solid #000000c4;
+    border: 1px solid #BDE1E5;
+}
+
+.btn-close{
+    background-color: #B7D1C5;
+    color: #000000;
+}
+
+.btn-close:hover{
+    background-color: #BDE1E5;
+    border: 1px solid #BDE1E5;
 }
