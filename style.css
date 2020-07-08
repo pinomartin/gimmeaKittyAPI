@@ -11,7 +11,7 @@ body{
     background-image: url(img/background.png);
     background-attachment: fixed;
     background-position: center;
-    
+    min-height: 100vh;
     font-family: 'Gochi Hand', cursive!important;
 }
 
@@ -35,18 +35,9 @@ body{
         margin: 0 auto;
         width: 35%!important;
     }
-
-    .card{
-        min-width: 50%;
-        max-width: 75%;
-        margin: 0 auto;
-    }
-
 }
 
-.card{
-    border-radius: 1rem;
-}
+
 
 .btn-kitty{
     background-color: rgb(241,214,80);
